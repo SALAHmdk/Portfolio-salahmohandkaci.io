@@ -1,0 +1,1 @@
+Je suis le developpeur front end qui programme la partie visible, l'interface utilisateur d'une application ou d'un site web a l'inverse du developpeur back-end qui travaille dans l'ombre.
