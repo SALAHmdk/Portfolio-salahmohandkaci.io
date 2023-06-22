@@ -1,1 +1,14 @@
-Je suis le developpeur front end qui programme la partie visible, l'interface utilisateur d'une application ou d'un site web a l'inverse du developpeur back-end qui travaille dans l'ombre.
+Après 2 années en Licence Ingénierie des Systèmes d’Information et des Logiciels, et licencié en sport vue que j’étais ancien joueur en football la patient a fini par prendre le dessus sur la raison alors je me suis réorienté dans un cursus informatique en intégrant un Bachelor Concepteur Développeur d'Application.
+
+
+Après une année de formation de concepteur Développeur d'application très dynamique orienté sur des projets pertinents, j'ai développé des compétences en gestion de projet avec la méthode Agile-Scrum, en conception avec mérise et UML, en maquettage avec les outils comme Figma et Balsamiq Wireframe et en fin en développement avec les langages comme HTML5/CSS, JavaScript, Java, J2EE, Spring boot, Angular sans oublié mes anciennes acquises en systèmes d’informations comme ADOBE, SQL, UML.
+
+
+A présent je peux évoluer comme développeur junior :
+
+	
+1. Développeur Front-end (HTML/CSS - Angular)
+2. Développeur Java
+3. Développeur J2EE
+4. Développeur Back-end / Spring Boot
+5. Développeur Full-Stack / Spring - Angular
