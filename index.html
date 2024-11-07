@@ -243,16 +243,16 @@
     <section class="contact" id="contact">
         <h2 class="heading">Me <span>Contacter!</span></h2>
 
-        <form action="https://mail.google.com/mail/u/0/#inbox">
+        <form action="https://formspree.io/f/mzzbraqo" method="POST">
             <div class="input-box">
-                <input type="texte" placeholder="Nom complet">
-                <input type="email" placeholder="Adresse mail">
+                <input type="text" name="name" placeholder="Nom complet" required>
+                <input type="email" name="email" placeholder="Adresse mail" required>
             </div>
             <div class="input-box">
-                <input type="Numero" placeholder="Numero">
-                <input type="Texte" placeholder="Adresse postale">
+                <input type="text" name="phone" placeholder="Numéro">
+                <input type="text" name="address" placeholder="Adresse postale">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Votre Message" required></textarea>
             <input type="submit" value="Envoyer Message" class="btn">
         </form>
     </section>
