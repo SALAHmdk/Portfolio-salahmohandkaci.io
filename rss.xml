@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+  <channel>
+    <title>Portfolio de Salah Mohand Kaci</title>
+    <link>https://portfolio-salah-mohand-kaci.netlify.app</link>
+    <description>Découvrez mes réalisations dans le domaine de la conception web et du design.</description>
+    <item>
+      <title>Site Web pour une entreprise locale</title>
+      <link>https://portfolio-salah-mohand-kaci.netlify.app/projet1</link>
+      <description>Création d'un site web pour une entreprise locale, avec une conception moderne et responsive.</description>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Application mobile de gestion de tâches</title>
+      <link>https://portfolio-salah-mohand-kaci.netlify.app/projet2</link>
+      <description>Développement d'une application mobile de gestion de tâches pour les professionnels.</description>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
