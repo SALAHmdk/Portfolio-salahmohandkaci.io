@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVWY1CEC9C"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -28,33 +28,32 @@
 <body>
 
     <header class="header">
-        <img src="images/log.png" alt="">
-        <a href="#" class="logo"></a>
-
         <div class='bx bx-menu' id="menu-icon"></div>
 
         <nav class="navbar">
-            <a href="#home" class="active">Acceuil</a>
-            <a href="#about">Mes compétences</a>
-            <a href="#services">A propos</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="a"data-lang="fr" data-en="Home" data-fr="Accueil">Accueil</a>
+            <a href="#about" class="a"data-lang="fr" data-en="About" data-fr="À propos">À propos</a>
+            <a href="#skills" class="a"data-lang="fr" data-en="Skills" data-fr="Compétences">Compétences</a>
+            <a href="#portfolio"class="a">Portfolio</a>
+            <a href="#contact"class="a">Contact</a>
+            <button id="toggleLanguageButton">
+                <img id="languageImage" src="images/france.png" alt="Langue">
+            </button>
         </nav>
     </header>
 
    
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Bonjour, C'est moi !</h3>
+            <h3 data-lang="fr" data-en="Hello, It's Me" data-fr="Bonjour, C'est moi">Bonjour, C'est moi</h3>
             <h1>Salah Mohand Kaci</h1>
             <h3>Et je suis <span class="multiple-text"></span></h3>
             <p>Bienvenue sur ma page portfolio ! Je vous invite à découvrir mes réalisations et mes projets.</p>
             <div class="social-media">
-                <a href="https://www.facebook.com/100008232405148"><i class='bx bxl-facebook'></i></a>
                 <a href="https://www.linkedin.com/in/salah-mohand-kaci-98a80b245/"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/SALAHmdk/"><i class='bx bxl-github'></i></a>
             </div>
-            <a href="images/Salah.pdf" class="btn">Telecharger CV</a>
+            <a href="images/Salah.pdf" class='btn' target="_blank" data-lang="fr" data-en="Download CV" data-fr="Télécharger CV">Télécharger CV</a>
         </div>
 
         <div class="home-img">
@@ -62,181 +61,305 @@
         </div>
     </section>
 
+
     <section class="about" id="about">
         <div class="about-img">
             <img src="images/about.png" alt="">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">MES <span>COMPETENCES</span></h2>
-            <h3>Développeur FULL STACK</h3>
-            <p>
-                <strong>LANGAGES:</strong> HTML5/CSS3 - JavaScript - SQL - JAVA - J2EE<br>
-                <strong>FRAMEWORKS:</strong> Bootstrap 5 - Angular - Spring Boot<br>
-                <strong>CONCEPTIONS:</strong> Merise - UML - Figma | Balsamiq Wireframes - Draw - Adobe (Illustrator - Photoshop)<br>
-                <strong>TECHNOLOGIES:</strong> Eclipse | Visual Studio Code - MySQL - Pack Office - Postman<br>
-                <strong>OS:</strong> Windows/Linux | MVC | Git<br>
-                <strong>GESTION DE PROJET:</strong> Compétences en gestion de projet<br>
-            </p>
-            <div class="skills">
-                <div class="skill">
-                    <span>HTML5/CSS3</span>
-                    <div class="progress">
-                        <span class="progress-percentage">70%</span>
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>JavaScript</span>
-                    <div class="progress">
-                        <span class="progress-percentage">40%</span>
-                        <div class="progress-bar" style="width: 40%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>SQL</span>
-                    <div class="progress">
-                        <span class="progress-percentage">60%</span>
-                        <div class="progress-bar" style="width: 60%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>JAVA</span>
-                    <div class="progress">
-                        <span class="progress-percentage">35%</span>
-                        <div class="progress-bar" style="width: 35%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>J2EE</span>
-                    <div class="progress">
-                        <span class="progress-percentage">40%</span>
-                        <div class="progress-bar" style="width: 40%;"></div>
-                    </div>
-                </div>
             </div>
-        
-            <h3>Data Scientist</h3>
-            <p>
-                <strong>COMPÉTENCES:</strong> Analyse de données, Machine Learning<br>
-                <strong>LANGAGES:</strong> Python<br>
-                <strong>OUTILS:</strong> Pandas<br>
-                <strong>DATA VISUALISATION:</strong> Tableau - Power BI<br>
-                <strong>PYTHON:</strong> Python orienté données __ 20%<br>
-            </p>
-            <div class="skills">
-                <div class="skill">
-                    <span>Python</span>
-                    <div class="progress">
-                        <span class="progress-percentage">20%</span>
-                        <div class="progress-bar" style="width: 20%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Tableau</span>
-                    <div class="progress">
-                        <span class="progress-percentage">70%</span>
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Power BI</span>
-                    <div class="progress">
-                        <span class="progress-percentage">70%</span>
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                </div>
-            </div>
-        
-            <h3>Expert en Systèmes d'Information et Sécurité</h3>
-            <p>
-                <strong>COMPÉTENCES:</strong> Polyvalence en gestion de systèmes d'informations et de la sécurité, Analyse de risques, Mise en conformité (ISO 27001, RGPD)<br>
-                <strong>ARCHITECTURE:</strong> Archimate pour l'architecture d'entreprise - logiciel de modélisation d'architecture d'entreprise ARCHI<br>
-                <strong>LANGAGES:</strong> Archimate<br>
-                <strong>OUTILS:</strong> ARCHI<br>
-            </p>
-            <div class="skills">
-                <div class="skill">
-                    <span>ARCHI</span>
-                    <div class="progress">
-                        <span class="progress-percentage">70%</span>
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                </div>
-            </div>
+            <div class="about-content">
+                <h2 class="heading" data-lang="fr" data-en="About Me" data-fr="À propos de Moi">
+                    À propos de<span> Moi</span>
+                </h2>
             
-            <h3>Gestion de Projet</h3>
-            <p>
-                <strong>COMPÉTENCES:</strong> Polyvalence en gestion de gestion en systèmes d'informations et de la sécurité, Pilotage de projet, Travail en Agilité<br>
-                <strong>OUTILS:</strong> Trello<br>
-            </p>
-            <div class="skills">
-                <div class="skill">
-                    <span>Trello</span>
-                    <div class="progress">
-                        <span class="progress-percentage">70%</span>
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                </div>
+                <p data-lang="fr"
+                   data-en="After two years of experience in an apprenticeship, I have acquired skills in development, data, security, and project management. My academic journey spanned five years: three years in application design and development, followed by a two-year Master's in Information Systems Expertise, where I deepened my knowledge in development, data, security, artificial intelligence, and project management. 
+                   This education and experience have allowed me to develop a comprehensive understanding of information systems and contribute to projects involving application development, data exploitation, infrastructure security, and project management. 
+                   I am now seeking my first professional opportunity to apply my expertise and continue growing in a dynamic and innovative environment."
+                   data-fr="Après deux ans d’expérience en alternance, j’ai acquis des compétences en développement, data, sécurité et gestion de projet. Mon parcours académique s’est déroulé sur cinq ans : trois ans en conception et développement d’applications, suivis de deux ans en Master Expertise des Systèmes d’Information, où j’ai approfondi le développement, la data, la sécurité, l’intelligence artificielle et la gestion de projet.
+                   Cette formation et mon expérience m’ont permis de développer une approche globale des systèmes d’information et d’intervenir sur des projets alliant développement applicatif, exploitation des données, sécurisation des infrastructures et pilotage de projet.
+                   Aujourd’hui, je suis à la recherche de ma première opportunité professionnelle afin de mettre en pratique mon expertise et continuer à évoluer dans un environnement dynamique et innovant.">
+                </p>
+            
+                <p id="hiddenContent" class="hidden-content" style="display: none;"
+                   data-lang="fr"
+                   data-en="Outside of my studies, I participated in personal projects of data analysis, demonstrating my passion for data exploration and the application of analytical methods. My portfolio aims to reflect my versatile profile, highlighting my project management skills and my strong interest in the data field. I am excited to discuss how I can contribute to a team and grow in the field of data."
+                   data-fr="En dehors de mes études, j'ai participé à de nombreux projets en tant que développeur full-stack, renforçant ainsi mes compétences en conception et développement d’applications. J'ai également mené des projets personnels d’analyse de données, illustrant mon intérêt pour l’exploration et l’exploitation des données à des fins analytiques. Mon portfolio et mon GitHub mettent en avant ces réalisations, reflétant mon profil polyvalent alliant développement, gestion de projet et data. Je suis enthousiaste à l’idée d’échanger sur la manière dont je peux apporter ma contribution à une équipe et continuer à évoluer dans ces domaines.">
+                </p>
+            
+                <p class="read-more-btn" onclick="toggleVisibility()">Read More</p>
             </div>
+
         </div>
-        
-        
     </section>
+
+
+
+    <section class="skills" id="skills">
+        <h2 class="heading" data-lang="fr" data-en="Skills" data-fr="Compétences">Compétences</h2>
+      
+        <div class="skills-container">
+          <!-- Web Skills -->
+          <div class="skills-category">
+            <h3>Web</h3>
+            <ul>
+              <li data-percent="85"><i class="bx bxl-html5"></i> HTML/CSS/JS <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="60"><i class="bx bxl-nodejs"></i> Node.js <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="60"><i class="bx bxl-wordpress"></i> WordPress <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+            </ul>
+          </div>
+      
+          <!-- Database Skills -->
+          <div class="skills-category">
+            <h3 data-lang="fr" data-en="Databases" data-fr="Bases de Données">Bases de Données</h3>
+            <ul>
+              <li data-percent="80"><i class='bx bx-data'></i> MySQL <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="70"><i class="bx bx-circle"></i> Oracle <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="70"><i class='bx bxs-data'></i> SQL, PL/SQL <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="60"><i class="bx bx-sitemap"></i> Merise <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="60"><i class="bx bx-sitemap"></i> UML <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+            </ul>
+            </ul>
+          </div>
+      
+          <!-- Programming Skills -->
+          <div class="skills-category">
+            <h3 data-lang="fr" data-en="Programming" data-fr="Programmation">Programmation</h3>
+            <ul>
+              <li data-percent="70"><i class="bx bxl-python"></i> Python <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="40"><i class="bx bxs-copyright"></i> Rust <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="50"><i class="bx bxl-java"></i> Java et J2EE <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="50"><i class='bx bxs-microchip'></i> ASM <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+            </ul>
+          </div>
+      
+      
+      
+          <!-- Data Skills -->
+          <div class="skills-category">
+            <h3 data-lang="fr" data-en="Data Analysis" data-fr="Analyse de données">Analyse de données</h3>
+            <ul>
+              <li data-percent="80"><i class='bx bx-chart'></i> Power Bi <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="75"><i class='bx bx-loader-circle'></i> Tableau <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="75"><i class='bx bxl-microsoft'></i> Excel <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+            </ul>
+          </div>
+      
+           <!-- Project Skills -->
+           <div class="skills-category">
+            <h3 data-lang="fr" data-en="Project Management" data-fr="Gestion de projet">Gestion de projet</h3>
+            <ul>
+              <li data-percent="75"><i class='bx bx-analyse'></i> Agile (scrum)<div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="75"><i class='bx bx-list-ol'></i> Ms Project <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="75"><i class='bx bxs-tag-alt'></i> Jira <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="70"><i class='bx bx-objects-horizontal-left'></i></i> Trello <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+            </ul>
+          </div>
+      
+          <!-- Framworks Skills -->
+          <div class="skills-category">
+            <h3 data-lang="fr" data-en="Framworks" data-fr="Framworks">Autres</h3>
+            <ul>
+              <li data-percent="50"><i class='bx bxl-angular'></i> Angular <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="50"><i class='bx bxs-component'></i> Spring Boot <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="50"><i class='bx bxl-bootstrap'></i> Bootstrap <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="50"><i class='bx bx-buildings'></i> Archimate <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+            </ul>
+          </div>
+                    <!-- Other Skills -->
+          <div class="skills-category">
+            <h3 data-lang="fr" data-en="Others" data-fr="Autres">Autres</h3>
+            <ul>
+              <li data-percent="70"><i class='bx bxl-aws'></i> Aws Cloud <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="70"><i class='bx bxs-component'></i> Virtual Box <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="70"><i class='bx bxl-figma'></i> Figma <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="50"><i class='bx bx-network-chart'></i> Packet Tracer <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="50"><i class='bx bx-edit-alt'></i> Balsamiq <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="60"><i class='bx bx-shape-square'></i> Draw <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+              <li data-percent="80"><i class='bx bx-objects-horizontal-left'></i> Archi <div class="progress-bar-container"><div class="progress-bar"></div><span class="percent-text"></span></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     
-    <section class="services" id="services">
-        <h2 class="heading">A PROPOS DE <span>MOI</span></h2>
 
-        <div class="services-container">
-            <div class="services-box">
-                <h3>Presentation</h3>
-                <p>
-                    Après deux années en Licence Ingénierie des Systèmes d’Information et des Logiciels, ainsi qu'un parcours en sport en tant qu'ancien joueur de football, j'ai finalement décidé de poursuivre mon cursus informatique plutôt que de continuer dans le football en intégrant un Bachelor 3 en tant que Développeur Full Stack (Concepteur développeur d'application), où j'ai acquis une spécialité en développement.
-                
-                    Suite à une année de formation dynamique axée sur des projets pertinents, j'ai développé des compétences en gestion de projet avec la méthode Agile-Scrum, en conception avec Merise et UML, ainsi qu'en maquettage à l'aide d'outils comme Figma et Balsamiq Wireframes. En outre, j'ai approfondi mes compétences en développement avec des langages tels que HTML5, CSS3, JavaScript, Java, J2EE, Spring Boot et Angular. J'ai également renforcé mes connaissances en systèmes d’information, notamment avec Adobe, SQL et UML.
-                
-                    En Master 1, j'ai choisi le parcours en tant qu'Expert en Systèmes d'Informations et Sécurité en tronc commun. Dans le cadre de mon Master 2, je me suis spécialisé en Data Science et Développement, ce qui m'a permis d'élargir mes compétences techniques et analytiques.
-                
-                    À présent, je suis prêt à évoluer comme développeur junior, data scientist, Expert en systems d'information et gestion de projet afin de mettre en pratique mes compétences :
-                
-                    <strong>LANGAGES:</strong> HTML5/CSS3 - JavaScript - SQL - JAVA - J2EE<br>
-                    <strong>FRAMEWORKS:</strong> Bootstrap 5 - Angular - Spring Boot<br>
-                    <strong>CONCEPTIONS:</strong> Merise - UML - Figma | Balsamiq Wireframes - Draw - Adobe (Illustrator - Photoshop)<br>
-                    <strong>TECHNOLOGIES:</strong> Eclipse | Visual Studio Code - MySQL - Pack Office - Postman<br>
-                    <strong>OS:</strong> Windows/Linux | MVC | Git<br>
-                    <strong>ARCHITECTURE:</strong> Archimate pour l'architecture d'entreprise - logiciel de modélisation d'architecture d'entreprise ARCHI<br>
-                </p>
-                
-              <!--  /*<a href="plus1.txt" class="btn">Plus</a>*/ -->
-            </div>
-
-        </div>
-    </section>
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Mes <span>Projets</span></h2>
+      <h2 class="heading" data-lang="fr" data-en="Latest Projects" data-fr="Projets Récents">Projets <span>Récents</span></h2>
+     
+      <div class="portfolio-container">
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Designer</h4>
-                    <p>On peut appercevoir sur les logo et les photos sur le portfolio que j'ai realise avec Photoshop et Illustrator</p>
-                </div>
-            </div>
+        <div class="portfolio-box">
+           <img src="images/portfolio1.jpg" alt="">
+           <div class="portfolio-layer">
+               <h4 data-lang="fr" data-en="Supermarket sales dashboard with Tableau and Excel" data-fr="Tableau de bord des ventes Supermarché avec Tableau et excel">Tableau de bord des ventes Supermarché avec Tableau et excel</h4>
+               <div class="button-container">
+                   <a onclick="openDashModal()" class="button" data-lang="fr" data-fr="Afficher les Dashboards" data-en="Show Dashboard">Afficher les Dashboards</a>
+                   <a href="https://github.com/SALAHmdk/data_viz_tableau" data-lang="fr" class="button" target="_blank" data-en="View project on GitHub" data-fr="Voir le projet sur Github">Voir le projet sur Github</a>
+               </div>
+           </div>
+         </div>
+         <div class="modal" id="DashModal">
+          <div class="modal-content">
+              <span class="close" onclick="closeDashModal()">&times;</span>
+              <img id="DashModalImage" src="images/dashbord.png" alt="Dash Image">
+              <button id="nextDashButton" onclick="showNextDashImage()" class="button arrow-button">
+                  <i class="fas fa-arrow-right"></i>
+              </button>
+              <button id="prevDashButton" onclick="showPreviousDashImage()" class="button arrow-button">
+                  <i class="fas fa-arrow-left"></i>
+              </button>
+          </div>
+      </div>
+      
 
-            <div class="portfolio-box">
-                <img src="images/portfolio2.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Application de gestion des clients et leurs animaux
-                        Spring - Angular</h4>
-                    <p>Realisation sur mon compte Github </p>
-                    <a href="plus.txt"><i class=''></i></a>
-                </div>
-            </div>
+
+      <div class="portfolio-box">
+
+        <img src="images/portfolio2.jpg" alt="">
+        <div class="portfolio-layer">
+            <h4 data-lang="fr" data-en="Machine Learning et Football" data-fr="Machine Learning et Football : Prédiction des Victoires et Défaites (Python)">Machine Learning et Football : Prédiction des Victoires et Défaites (Python))</h4>
+            <div class="button-container">
+                <a onclick="openModal()" class="button" data-lang="fr" data-en="Show interfaces" data-fr="Affihcer les arbres">Affihcer les interfaces</a>
+                <a href="https://github.com/SALAHmdk/DecisionTree_Python" class="button" target="_blank" data-en="View Code on GitHub" data-fr="Voir le projet sur Github">Voir le code sur Github</a>
             </div>
         </div>
+      </div>
+      
+      
+      <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" alt="Your Image">
+        <button id="nextButton" onclick="showNextImage()" class="button arrow-button"><i class="fas fa-arrow-right"></i></button>
+        <button id="prevButton" onclick="showPreviousImage()"class="button arrow-buttonl"><i class="fas fa-arrow-left"></i></button>
+      </div>
+      </div>
+
+
+      <div class="portfolio-box">
+        <img src="images/portfolio3.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4 data-lang="fr" data-fr="Système IoT basé sur le cloud computing et de la Green IT" data-en="Système IoT basé sur le cloud computing et les principes de la Green IT">Système IoT complet basé sur le cloud computing et respectant les principes de la Green IT</h4>
+          <div class="button-container">
+            <a onclick="openFunctionModal()" class="button" data-lang="fr" data-en="Show Function diagram" data-fr="Afficher le diagramme">Afficher le diagramme</a>
+            <a href="https://github.com/SALAHmdk/IOT_projet_ecole" class="button" target="_blank" data-lang="fr" data-en="View project on GitHub" data-fr="Voir le projet sur Github">Voir le projet sur Github</a>
+        </div>
+        </div>
+      </div>
+      
+      <div class="modal" id="functionImageModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeFunctionModal()">&times;</span>
+          <img id="functionModalImage" alt="Function Image">
+          <button id="nextFunctionButton" onclick="showNextFunctionImage()" class="button arrow-button"><i class="fas fa-arrow-right"></i></button>
+          <button id="prevFunctionButton" onclick="showPreviousFunctionImage()" class="button arrow-buttonl"><i class="fas fa-arrow-left"></i></button>
+      </div>
+      </div>
+
+
+      <div class="portfolio-box">
+        <img src="images/portfolio4.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4 data-lang="fr" data-en="Web site for a Pizzeria" data-fr="Site web pour une Pizzeria avec du Java, HTML, CSS, JS">Site web pour une Pizzeria avec du Java, HTML, CSS, JS</h4>
+          <div class="button-container">
+          <a onclick="openDashboardModal()" class="button" data-lang="fr" data-en="Show interface" data-fr="Afficher les interfaces">Afficher les Interfaces</a>
+          <a href="https://github.com/SALAHmdk/projet_salah_pizza" class="button" target="_blank" data-lang="fr" data-en="View project" data-fr="Afficher le projet">Afficher le projet</a>
+        </div>
+      </div>
+      </div>
+      
+      <div class="modal" id="dashboardModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeDashboardModal()">&times;</span>
+        <img id="dashboardModalImage" alt="Dashboard Image">
+        <button id="nextDashboardButton" onclick="showNextDashboardImage()" class="button arrow-button"><i class="fas fa-arrow-right"></i></button>
+        <button id="prevDashboardButton" onclick="showPreviousDashboardImage()" class="button arrow-buttonl"><i class="fas fa-arrow-left"></i></button>
+      </div>
+      </div>
+
+
+      <div class="portfolio-box">
+        <img src="images/portfolio5.webp" alt="">
+        <div class="portfolio-layer">
+            <h4 data-lang="fr" data-en="Personal Portfolio" data-fr="JTS App digitalise MX2 avec ERP-CRM, UX/UI, PESTEL, SWOT, Gantt">JTS App digitalise MX2 avec ERP-CRM, UX/UI, PESTEL, SWOT, Gantt</h4>
+            <div class="button-container">
+                <a onclick="openPortfolioModal()" class="button" data-lang="fr" data-fr="Afficher le Portfolio" data-en="Show Portfolio">Afficher le Portfolio</a>
+                <a href="https://github.com/SALAHmdk/SI_digital_app_gestion" data-lang="fr" class="button" target="_blank" data-en="View Code on GitHub" data-fr="Voir le code sur Github">Voir le code sur Github</a>
+            </div>
+        </div>
+      </div>
+      
+      
+      <div class="modal" id="portfolioModal">
+      <div class="modal-content">
+          <span class="close" onclick="closePortfolioModal()">&times;</span>
+          <img id="portfolioModalImage" alt="Portfolio Image">
+          <button id="nextPortfolioButton" onclick="showNextPortfolioImage()" class="button arrow-button"><i class="fas fa-arrow-right"></i></button>
+          <button id="prevPortfolioButton" onclick="showPreviousPortfolioImage()" class="button arrow-buttonl"><i class="fas fa-arrow-left"></i></button>
+      </div>
+      </div>
+
+
+
+
+
+      <div class="portfolio-box">
+        <img src="images/portfolio7.jpg" alt="Phishing & Smishing Platform">
+        <div class="portfolio-layer">
+            <h4 data-lang="fr" data-en="Phishing & Smishing Attack Simulation Platform" data-fr="Plateforme de simulation d'attaques de Phishing et Smishing">
+                Plateforme de simulation d'attaques de Phishing et Smishing
+            </h4>
+            <div class="button-container">
+                <a onclick="openPhishingModal()" class="button" data-lang="fr" data-en="Show Platform" data-fr="Afficher la Plateforme">
+                    Afficher la Plateforme
+                </a>
+                <a href="https://github.com/SALAHmdk/PhishinGuard" class="button" target="_blank" 
+                   data-lang="fr" data-en="View project on GitHub" data-fr="Voir le projet sur Github">
+                    Voir le projet sur Github
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="phishingModal">
+        <div class="modal-content">
+            <span class="close" onclick="closePhishingModal()">&times;</span>
+            <img id="phishingModalImage" src="images/phishing1.png" alt="Phishing Platform">
+            <button id="prevPhishingButton" onclick="showPreviousPhishingImage()" class="button arrow-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button id="nextPhishingButton" onclick="showNextPhishingImage()" class="button arrow-button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+    
+
+    <div class="portfolio-box">
+      <img src="images/portfolio8.jpg" alt="">
+      <div class="portfolio-layer">
+          <h4 data-lang="fr" data-en="AI-based Chatbot for Customer Support" data-fr="Chatbot IA pour Plateforme PhishinGuard">Chatbot IA pour support client</h4>
+          <div class="button-container">
+              <a onclick="openChatbotModal()" class="button" data-lang="fr" data-en="Show Chatbot" data-fr="Afficher le Chatbot">Afficher le Chatbot</a>
+              <a href="https://github.com/SALAHmdk/PhishinGuard_chatbot" class="button" target="_blank" data-lang="fr" data-en="View project on GitHub" data-fr="Voir le projet sur Github">Voir le projet sur Github</a>
+          </div>
+      </div>
+  </div>
+  
+  <div class="modal" id="chatbotModal">
+      <div class="modal-content">
+          <span class="close" onclick="closeChatbotModal()">&times;</span>
+          <img id="chatbotModalImage" src="images/IA1.png" alt="Chatbot Interface">
+          <button id="prevChatbotButton" onclick="showPreviousChatbotImage()" class="button arrow-button"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextChatbotButton" onclick="showNextChatbotImage()" class="button arrow-button"><i class="fas fa-arrow-right"></i></button>
+      </div>
+  </div>
+  
+
+
+
+  </div>
     </section>
 
 
@@ -259,14 +382,14 @@
 
    
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Salah MOHAND KACI | Tous Droits Reserves.</p>
-        </div>
+      <div class="footer-text">
+          <p>Copyright &copy; 2023 by Salah MOHAND KACI | Tous Droits Reserves.</p>
+      </div>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
+      <div class="footer-iconTop">
+          <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+  </footer>
 
 
     
@@ -277,6 +400,8 @@
 
  
     <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
