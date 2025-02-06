@@ -39,7 +39,111 @@ section {
     position: relative;
 }
 
+/* Ajoutez ces media queries pour améliorer la réactivité */
 
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .home-img img {
+        width: 60vw;
+    }
+
+    .about-img img {
+        width: 60vw;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .navbar a {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    .header {
+        padding: 2rem 5%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-iconTop {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 80vw;
+    }
+
+    .about-img img {
+        width: 80vw;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        padding: 2rem 3%;
+    }
+
+    .footer-text p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .home-img img {
+        width: 90vw;
+    }
+
+    .about-img img {
+        width: 90vw;
+    }
+
+    .navbar a {
+        font-size: 1.4rem;
+    }
+
+    .footer-text p {
+        font-size: 1.2rem;
+    }
+}
 
 .header {
     position: fixed;
@@ -106,9 +210,10 @@ section {
 
 
 #menu-icon {
+    display: block;
+    cursor: pointer;
     font-size: 3.6rem;
     color: var(--text-color);
-    display: none;
 }
 
 .home {
