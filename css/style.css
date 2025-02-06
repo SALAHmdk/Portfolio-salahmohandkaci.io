@@ -195,7 +195,7 @@ section {
 }
 
 #toggleLanguageButton {
-    position: absolute;
+    position: none;
     top: 10px;
     right: 50px;
     cursor: pointer;
@@ -210,11 +210,14 @@ section {
 
 
 #menu-icon {
-    display: block;
+    display: none;
     cursor: pointer;
     font-size: 3.6rem;
     color: var(--text-color);
+    margin-left: 44rem; /* Pousse le menu burger à droite */
 }
+
+
 
 .home {
     display: flex;
