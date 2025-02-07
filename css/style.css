@@ -166,7 +166,7 @@ section {
     position: absolute;
     top: 10;
     right: 0;
-    padding: 10px 100px;
+    padding: 10px 10px;
 }
 
 
@@ -215,7 +215,7 @@ section {
     cursor: pointer;
     font-size: 3.6rem;
     color: var(--text-color);
-    margin-left: 35rem; /* Pousse le menu burger à droite */
+    margin-left: 38rem; /* Pousse le menu burger à droite */
 }
 
 
