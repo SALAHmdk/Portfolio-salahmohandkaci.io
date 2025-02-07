@@ -29,6 +29,8 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    max-width:100%;
+    overflow-x: hidden;
 }
 
 
