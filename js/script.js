@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /*==================== typed js ====================*/
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Data Analyst','Chef De Projet'],
+    strings: ['Full-Stack Developer','Data Analyst','Data Scientist','Data Visualization Specialist','Cybersecurity Consultant','IT Project Manager','IT Consultant','Information Systems Architect','ERP/CRM Consultant','Data Architect','AI Product Manager','Chef De Projet'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -292,7 +292,57 @@ document.onkeydown = function(event) {
 
 
 
-let currentImageIndex = 0;
+let currentDockerImageIndex = 0;
+const dockerImages = ["images/N1.png", "images/N2.png", "images/N3.png"];
+
+function openDockerModal() {
+    var modal = document.getElementById("dockerModal");
+    var modalImage = document.getElementById("dockerModalImage");
+    var prevButton = document.getElementById("prevDockerButton");
+    var nextButton = document.getElementById("nextDockerButton");
+
+    document.documentElement.classList.add('modal-open');
+    document.body.style.overflow = 'hidden';
+    navbar.classList.add('modal-open');
+
+    currentDockerImageIndex = 0;
+    modalImage.src = dockerImages[currentDockerImageIndex];
+    modal.style.display = "block";
+
+    prevButton.style.display = currentDockerImageIndex === 0 ? "none" : "block";
+    nextButton.style.display = currentDockerImageIndex === dockerImages.length - 1 ? "none" : "block";
+}
+
+function showNextDockerImage() {
+    currentDockerImageIndex = (currentDockerImageIndex + 1) % dockerImages.length;
+    var modalImage = document.getElementById("dockerModalImage");
+    modalImage.src = dockerImages[currentDockerImageIndex];
+
+    document.getElementById("prevDockerButton").style.display = "block";
+    document.getElementById("nextDockerButton").style.display = currentDockerImageIndex === dockerImages.length - 1 ? "none" : "block";
+}
+
+function showPreviousDockerImage() {
+    currentDockerImageIndex = (currentDockerImageIndex - 1 + dockerImages.length) % dockerImages.length;
+    var modalImage = document.getElementById("dockerModalImage");
+    modalImage.src = dockerImages[currentDockerImageIndex];
+
+    document.getElementById("prevDockerButton").style.display = currentDockerImageIndex === 0 ? "none" : "block";
+    document.getElementById("nextDockerButton").style.display = "block";
+}
+
+function closeDockerModal() {
+    var modal = document.getElementById("dockerModal");
+    modal.style.display = "none";
+    document.body.style.overflow = 'auto';
+    navbar.classList.remove('modal-open');
+}
+
+
+
+
+
+let currentImageIndex1 = 0;
 const images = ["images/r1.png", "images/r2.png", "images/r3.png", "images/r4.png", "images/r5.png", "images/footer.png"];
 
 function openModal() {
@@ -336,7 +386,6 @@ function openModal() {
         }
     };
 }
-
 
 
 // Fonction pour afficher la prochaine image
@@ -691,10 +740,17 @@ function updatePageContent() {
     elements.forEach(element => {
         let translation = element.getAttribute(`data-${currentLanguage}`);
         if (translation) {
-            element.textContent = translation;
+            if (element.placeholder) {
+                element.placeholder = translation; // Met à jour les placeholders
+            } else if (element.tagName === "INPUT" && element.type === "submit") {
+                element.value = translation; // Met à jour les boutons "Envoyer Message"
+            } else {
+                element.textContent = translation; // Met à jour les textes normaux
+            }
         }
     });
 }
+
 
 
 
