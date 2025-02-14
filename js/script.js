@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const typed = new Typed('.multiple-text', {
     strings: ['Full-Stack Developer','Data Analyst','Data Scientist','Data Visualization Specialist','Cybersecurity Consultant','IT Project Manager','IT Consultant','Information Systems Architect','ERP/CRM Consultant','Data Architect','AI Product Manager','Chef De Projet'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
+    typeSpeed: 40,
+    backSpeed: 40,
+    backDelay: 40,
     loop: true
 });
 
