@@ -63,7 +63,20 @@
                 <a href="https://www.linkedin.com/in/salah-mohand-kaci-98a80b245/"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/SALAHmdk/"><i class='bx bxl-github'></i></a>
             </div>
-            <a href="images/Salah.pdf" class='btn' target="_blank" data-lang="fr" data-en="Download CV" data-fr="Télécharger CV">Télécharger CV</a>
+            <a href="images/Salah.pdf" class="btn" target="_blank" data-tooltip="Taille: 20Mo">
+              <div class="btn-wrapper">
+                  <div class="btn-text" data-lang="fr" data-en="Download CV" data-fr="Télécharger CV">Télécharger CV</div>
+                  <span class="btn-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" 
+                          preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                          </path>
+                      </svg>
+                  </span>
+              </div>
+          </a>
+          
         </div>
 
         <div class="home-img">
@@ -424,7 +437,19 @@
               <input type="text" name="subject" placeholder="Sujet du message" data-lang="fr" data-en="Message Subject" data-fr="Sujet du message">
           </div>
           <textarea name="message" cols="30" rows="10" placeholder="Votre Message" data-lang="fr" data-en="Your Message" data-fr="Votre Message" required></textarea>
-          <input type="submit" value="Envoyer Message" class="btn" data-lang="fr" data-en="Send Message" data-fr="Envoyer Message">
+          <button type="submit" class="send-btn">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                </svg>
+              </div>
+            </div>
+            <span data-lang="fr" data-en="Send Message" data-fr="Envoyer Message">Envoyer Message</span>
+          </button>
+          
+        
       </form>
   </section>
   
