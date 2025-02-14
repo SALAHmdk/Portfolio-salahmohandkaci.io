@@ -301,22 +301,123 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+/* ✅ Bouton animé pour le CV */
 .btn {
+    --width: 180px;
+    --height: 50px;
+    --tooltip-height: 35px;
+    --tooltip-width: 120px;
+    --gap-between-tooltip-to-button: 10px;
+    --button-color: var(--main-color);
+    --tooltip-color: #fff;
+
     display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 2rem var(--main-color);
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    border-radius: 30px;
+    box-shadow: 0 0 2rem var(--button-color);
     font-size: 1.6rem;
     color: var(--second-bg-color);
-    letter-spacing: .1rem;
     font-weight: 700;
-    transition: .5s ease;
+    letter-spacing: .1rem;
+    transition: background 0.3s, box-shadow 0.3s;
+    position: relative;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 
+/* ✅ Effet tooltip */
+.btn::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 0.9rem;
+    color: #111;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button));
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* ✅ Flèche du tooltip */
+.btn::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--tooltip-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* ✅ Ajout de la structure de changement texte ↔ icône */
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.btn-text, .btn-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn-text {
+    transform: translateY(0);
+}
+
+.btn-icon {
+    transform: translateY(100%);
+}
+
+.btn-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #00ff99;
+}
+
+/* ✅ Effet au survol */
 .btn:hover {
+    background: #475061;
     box-shadow: none;
 }
+
+.btn:hover .btn-text {
+    transform: translateY(-100%);
+}
+
+.btn:hover .btn-icon {
+    transform: translateY(0);
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .about {
     display: flex;
@@ -761,9 +862,90 @@ margin-bottom: 4rem;
     color: var(--bg-color); 
     margin-top: -17px;
 }
-
+/* ✅ Style du bouton animé d'envoi */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+}
+.send-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px; /* Taille du texte */
+    background:#323946;
+    color: #00ff99; /* ✅ Met le texte en noir */
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+  /* ✅ Effet de survol */
+  .send-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #323946 0%, #00ff99 100%);
+  }
+  
+  /* ✅ Effet au clic */
+  .send-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px #00000033;
+  }
+  
+  /* ✅ Animation du texte */
+  .send-btn span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  .send-btn:hover span {
+    scale: 0;
+    font-size: 0%;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  /* ✅ Icône SVG */
+  .send-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  .send-btn .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+  }
+  
+  /* ✅ Effet d'agrandissement de l'icône */
+  .send-btn:hover .svg-wrapper {
+    background-color: #323946;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .send-btn:hover svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    transform: rotate(45deg);
+  }
+  
 .contact h2 {
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .contact form {
@@ -788,7 +970,7 @@ margin-bottom: 4rem;
     font-size: 1.6rem;
     color: var(--text-color);
     background: var(--second-bg-color);
-    border-radius: .8rem;
+    border-radius: .9rem;
     margin: .7rem 0;
 }
 
