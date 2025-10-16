@@ -90,7 +90,17 @@ document.addEventListener('DOMContentLoaded', function () {
 /*==================== typed js ====================*/
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Full-Stack Developer','Data Analyst','Data Scientist','Data Visualization Specialist','Cybersecurity Consultant','IT Project Manager','IT Consultant','Information Systems Architect','ERP/CRM Consultant','Data Architect','AI Product Manager','Chef De Projet'],
+    strings: ['Data Analyst',
+ 'Data Scientist',
+ 'Data Engineer',
+ 'Machine Learning Engineer',
+ 'Data Visualization Specialist',
+ 'AI Product Manager',
+ 'Data Architect',
+ 'Information Systems Architect',
+ 'IT Consultant',
+ 'Full-Stack Developer',
+ 'Chef de Projet IT / Data & IA'],
     typeSpeed: 40,
     backSpeed: 40,
     backDelay: 40,
