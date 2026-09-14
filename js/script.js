@@ -90,16 +90,12 @@ document.addEventListener('DOMContentLoaded', function () {
 /*==================== typed js ====================*/
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Data Analyst',
- 'Data Scientist',
+    strings: ['Data Scientist LLM, RAG & Agentic AI',
+ 'Data Analyst',
  'Data Engineer',
  'Machine Learning Engineer',
- 'Data Visualization Specialist',
- 'AI Product Manager',
- 'Data Architect',
- 'Information Systems Architect',
  'IT Consultant',
- 'Full-Stack Developer',
+ 'Full-Stack Developer',QA Tester / QA Analyst,
  'Chef de Projet IT / Data & IA'],
     typeSpeed: 40,
     backSpeed: 40,
